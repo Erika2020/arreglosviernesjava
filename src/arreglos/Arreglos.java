@@ -5,6 +5,7 @@
  */
 package arreglos;
 
+import java.util.Scanner;
 import paquete2.Heroe;
 
 /**
@@ -17,7 +18,25 @@ public class Arreglos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       // COMO SE UTILIZA UNA CLASE?
+      Scanner entrada = new Scanner(System.in);
+      int [] numeros=new int [5];
+      
+      
+      
+      for(int i=0;i<numeros.length;i++){
+      System.out.println("Digita un numero:");
+      numeros[i]=entrada.nextInt();
+       
+      }
+      
+      
+      for(int i=0;i<numeros.length;i++){
+      System.out.println(numeros[i]);
+      }
+     
+// COMO SE UTILIZA UNA CLASE?
+       
+       
       // CREATO UN OBJETO 
       
       //QUE ES UN OBJETO 
@@ -33,8 +52,8 @@ public class Arreglos {
        heroe.setEdad(-5);
        
        //
-       System.out.println(heroe.nombre);
-       System.out.println(heroe.getEdad());
+       //System.out.println(heroe.nombre);
+       //System.out.println(heroe.getEdad());
     }
     
 }
